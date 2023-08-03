@@ -1,0 +1,13 @@
+*__pycache__*
+*logs*
+.DS_Store
+.venv
+.vscode
+.scripts
+.templates
+.sh
+*.csv
+*.xlsx
+*.xml
+output
+config

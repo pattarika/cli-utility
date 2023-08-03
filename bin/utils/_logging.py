@@ -46,7 +46,7 @@ def setup_logger(args):
     # Set up colored console logs using coloredlogs library
     coloredlogs.install(
         logger=logger,
-        level=args.log_level.upper(),
+        level=args.log_level.upper() if len(sys.argv[1:]) > 0 else 'INFO',
         level_styles=custom_level_styles,
         fmt='%(levelname)-8s: %(message)s',
         field_styles={

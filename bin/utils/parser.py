@@ -158,13 +158,6 @@ class AkamaiParser(CustomHelpFormatter, argparse.ArgumentParser):
                                   help='Set the log level. Too noisy, increase to warning',
                                  )
 
-            optional.add_argument('-e', '--edgerc',
-                                  metavar='', type=str, dest='section',
-                                  help='location of the credentials file [$AKAMAI_EDGERC]')
-            optional.add_argument('-s', '--section',
-                                  metavar='', type=str, dest='section',
-                                  help='section of the credentials file [$AKAMAI_EDGERC_SECTION]')
-
     @classmethod
     def all_command(cls, subparsers):
         actions = {}

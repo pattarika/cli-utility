@@ -28,7 +28,7 @@ pd.set_option('display.max_rows', None)
 
 def main(args, logger):
     '''
-    python bin/akamai-utility.py -a 1-5BYUG1 delivery-config --show \
+    python bin/ak-utility.py -a 1-5BYUG1 delivery-config --show \
     --group-id 116576 66711 215385 \
     --behavior cpCode origin mPulse allowPost
     '''
@@ -259,7 +259,7 @@ def main(args, logger):
 
 def get_property_all_behaviors(args, logger):
     '''
-    python bin/akamai-utility.py -a 1-5BYUG1 delivery-config behavior \
+    python bin/ak-utility.py -a 1-5BYUG1 delivery-config behavior \
         --property XXXXX \
         --group-id  116576 66711 215385 \
         --behavior cpCode origin mPulse allowPost \
@@ -293,7 +293,7 @@ def get_property_all_behaviors(args, logger):
 
 def get_property_advanced_behavior(args, logger):
     '''
-    python bin/akamai-utility.py -a AANA-2NUHEA delivery-config metadata --property xxx yyy --advBehavior
+    python bin/ak-utility.py -a AANA-2NUHEA delivery-config metadata --property xxx yyy --advBehavior
     '''
 
     if args.version and len(args.property) > 1:
@@ -385,7 +385,7 @@ def get_property_advanced_behavior(args, logger):
 
 def get_property_advanced_override(args, logger):
     '''
-    python bin/akamai-utility.py -a AANA-2NUHEA delivery-config metadata --property xxx yyy --advOverride
+    python bin/ak-utility.py -a AANA-2NUHEA delivery-config metadata --property xxx yyy --advOverride
     '''
     if args.version and len(args.property) > 1:
         sys.exit(logger.error('If --version is specified, we can lookup one property'))

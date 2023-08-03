@@ -36,5 +36,5 @@ if __name__ == '__main__':
             else:
                 sec.list_config(args, logger)
 
-            end_time = lg.log_cli_timing(start_time)
-            logger.info(end_time)
+        end_time = lg.log_cli_timing(start_time)
+        logger.info(end_time)

@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict
 from urllib.parse import urlparse
 
-from akamai_api.edge_auth import AkamaiSession
+from ak_api.edge_auth import AkamaiSession
 from boltons.iterutils import remap
 from requests.structures import CaseInsensitiveDict
 from rich import print_json

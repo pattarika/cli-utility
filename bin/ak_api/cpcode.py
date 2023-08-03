@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 
-from akamai_api.edge_auth import AkamaiSession
+from ak_api.edge_auth import AkamaiSession
 from utils import _logging as lg
 
 

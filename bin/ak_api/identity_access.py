@@ -6,7 +6,7 @@ import logging
 import re
 import sys
 
-from akamai_api.edge_auth import AkamaiSession
+from ak_api.edge_auth import AkamaiSession
 from rich import print_json
 from utils import _logging as lg
 
